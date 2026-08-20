@@ -10,11 +10,9 @@
 
 <body>
 
+  <main class="card">
 
-
-  <div class="card">
-
-    <div class="header">
+    <header class="header">
       <span class="header-tag">Centro Deportivo</span>
 
       <h1>Solicita tu horario</h1>
@@ -23,7 +21,7 @@
         Elige tu deporte y disponibilidad —
         Te confirmaremos en un aproximado de 24 horas.
       </p>
-    </div>
+    </header>
 
     <!-- FORMULARIO -->
     <form class="form-body" action="https://formsubmit.co/horariossip@gmail.com" method="POST">
@@ -34,29 +32,28 @@
       <input type="hidden" name="_template" value="table">
 
       <!-- NOMBRE -->
-      <div class="name-row">
+      <section class="name-row">
 
-        <div>
+        <article>
           <label class="field-label" for="firstName">
             Nombre
           </label>
 
           <input type="text" id="firstName" name="Nombre" placeholder="Nombre" required>
-        </div>
+        </article>
 
-        <div>
+        <article>
           <label class="field-label" for="lastName">
             Apellido
           </label>
 
           <input type="text" id="lastName" name="Apellido" placeholder="Apellido" required>
-        </div>
+        </article>
 
-      </div>
-
+      </section>
 
       <!-- CORREO -->
-      <div>
+      <section>
 
         <label class="field-label" for="email">
           Correo electrónico
@@ -64,23 +61,21 @@
 
         <input type="email" id="email" name="Correo" placeholder="@alumnos.sip.cl" required>
 
-      </div>
+      </section>
 
-
-      <div class="divider"></div>
-
+      <hr class="divider">
 
       <!-- DEPORTES -->
-      <div>
+      <section>
 
         <label class="field-label">
           Deporte de interés
         </label>
 
-        <div class="sport-grid">
+        <section class="sport-grid">
 
           <!-- FÚTBOL -->
-          <div class="sport-card">
+          <article class="sport-card">
 
             <input type="checkbox" id="futbol" name="Deporte" value="Fútbol">
 
@@ -98,11 +93,10 @@
 
             </label>
 
-          </div>
-
+          </article>
 
           <!-- BASQUETBOL -->
-          <div class="sport-card">
+          <article class="sport-card">
 
             <input type="checkbox" id="basquetbol" name="Deporte" value="Basquetbol">
 
@@ -120,11 +114,10 @@
 
             </label>
 
-          </div>
-
+          </article>
 
           <!-- VOLEIBOL -->
-          <div class="sport-card">
+          <article class="sport-card">
 
             <input type="checkbox" id="volei" name="Deporte" value="Vóleibol">
 
@@ -142,20 +135,18 @@
 
             </label>
 
-          </div>
+          </article>
 
-        </div>
+        </section>
 
-      </div>
+      </section>
 
-
-      <div class="divider"></div>
-
+      <hr class="divider">
 
       <!-- DÍA, HORA Y DURACIÓN -->
-      <div class="time-row">
+      <section class="time-row">
 
-        <div>
+        <article>
 
           <label class="field-label" for="dia">
             Día preferido
@@ -175,10 +166,9 @@
 
           </select>
 
-        </div>
+        </article>
 
-
-        <div>
+        <article>
 
           <label class="field-label" for="hora">
             Hora de inicio
@@ -191,12 +181,12 @@
             </option>
 
             <option>13:00</option>
+
           </select>
 
-        </div>
+        </article>
 
-
-        <div>
+        <article>
 
           <label class="field-label" for="duracion">
             Duración
@@ -212,26 +202,26 @@
 
           </select>
 
-        </div>
+        </article>
 
-      </div>
-
+      </section>
 
       <!-- COMENTARIOS -->
-      <div>
+      <section>
 
         <label class="field-label" for="comentarios">
           Comentarios adicionales
         </label>
 
-        <textarea id="comentarios" name="Comentarios"
+        <textarea
+          id="comentarios"
+          name="Comentarios"
           placeholder="Número de jugadores, requisitos especiales, etc."></textarea>
 
-      </div>
-
+      </section>
 
       <!-- MENSAJE DE ÉXITO -->
-      <div id="successBanner" class="success-banner">
+      <aside id="successBanner" class="success-banner">
 
         <span>✓</span>
 
@@ -239,11 +229,10 @@
           ¡Solicitud enviada! Te confirmaremos tu horario pronto.
         </span>
 
-      </div>
-
+      </aside>
 
       <!-- BOTÓN -->
-      <div class="submit-row">
+      <footer class="submit-row">
 
         <p class="submit-note">
 
@@ -253,21 +242,17 @@
 
         </p>
 
-
         <button class="submit-btn" type="submit">
-
           Enviar solicitud →
-
         </button>
 
-      </div>
+      </footer>
 
     </form>
 
-  </div>
+  </main>
 
-
-  <script src="Horarios.js"></script>
+  <script src="Hoararios.js"></script>
 
 </body>
 </html>
