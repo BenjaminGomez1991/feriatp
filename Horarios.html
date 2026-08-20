@@ -11,11 +11,13 @@
 </head>
 <body>
 
+  <main class="card">
 
 
   <div class="card">
 
     <nav class="header">
+    <header class="header">
       <span class="header-tag">Centro Deportivo</span>
       <h1>Solicita tu horario</h1>
       <p>Elige tu deporte y disponibilidad — Te confirmaremos en un aproximado de 24hrs </p>
@@ -25,6 +27,24 @@
 
       <div class="name-row">
         <div>
+      <p>
+        Elige tu deporte y disponibilidad —
+        Te confirmaremos en un aproximado de 24 horas.
+      </p>
+    </header>
+
+    <!-- FORMULARIO -->
+    <form class="form-body" action="https://formsubmit.co/horariossip@gmail.com" method="POST">
+
+      <!-- Configuración de FormSubmit -->
+      <input type="hidden" name="_subject" value="Nueva solicitud de horario deportivo">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <!-- NOMBRE -->
+      <section class="name-row">
+
+        <article>
           <label class="field-label" for="firstName">
             Nombre
           </label>
@@ -32,6 +52,9 @@
           <input type="text" id="firstName" name="Nombre" placeholder="Nombre" required>
         </div>
         <div>
+        </article>
+
+        <article>
           <label class="field-label" for="lastName">
             Apellido
           </label>
@@ -41,6 +64,12 @@
       </div>
 
       <div>
+        </article>
+
+      </section>
+
+      <!-- CORREO -->
+      <section>
 
         <label class="field-label" for="email">
           Correo electrónico
@@ -58,6 +87,24 @@
 
           <div class="sport-card">
             <input type="checkbox" id="futbol" />
+      </section>
+
+      <hr class="divider">
+
+      <!-- DEPORTES -->
+      <section>
+
+        <label class="field-label">
+          Deporte de interés
+        </label>
+
+        <section class="sport-grid">
+
+          <!-- FÚTBOL -->
+          <article class="sport-card">
+
+            <input type="checkbox" id="futbol" name="Deporte" value="Fútbol">
+
             <label class="sport-label" for="futbol">
               <i class="ti ti-ball-football sport-icon"></i>
               <span class="sport-name">Fútbol</span>
@@ -67,6 +114,14 @@
 
           <div class="sport-card">
             <input type="checkbox" id="basquetbol" />
+
+          </article>
+
+          <!-- BASQUETBOL -->
+          <article class="sport-card">
+
+            <input type="checkbox" id="basquetbol" name="Deporte" value="Basquetbol">
+
             <label class="sport-label" for="basquetbol">
               <i class="ti ti-ball-basketball sport-icon"></i>
               <span class="sport-name">Basquetbol</span>
@@ -76,6 +131,14 @@
 
           <div class="sport-card">
             <input type="checkbox" id="volei" />
+
+          </article>
+
+          <!-- VOLEIBOL -->
+          <article class="sport-card">
+
+            <input type="checkbox" id="volei" name="Deporte" value="Vóleibol">
+
             <label class="sport-label" for="volei">
               <i class="ti ti-ball-volleyball sport-icon"></i>
               <span class="sport-name">Vóleibol</span>
@@ -93,6 +156,30 @@
           <label class="field-label" for="dia">Día preferido</label>
           <select id="dia">
             <option value="">Seleccionar</option>
+
+          </article>
+
+        </section>
+
+      </section>
+
+      <hr class="divider">
+
+      <!-- DÍA, HORA Y DURACIÓN -->
+      <section class="time-row">
+
+        <article>
+
+          <label class="field-label" for="dia">
+            Día preferido
+          </label>
+
+          <select id="dia" name="Día" required>
+
+            <option value="">
+              Seleccionar
+            </option>
+
             <option>Lunes</option>
             <option>Martes</option>
             <option>Miércoles</option>
@@ -113,6 +200,39 @@
           <label class="field-label" for="duracion">Duración</label>
           <select id="duracion">
             <option value="">Seleccionar</option>
+
+        </article>
+
+        <article>
+
+          <label class="field-label" for="hora">
+            Hora de inicio
+          </label>
+
+          <select id="hora" name="Hora" required>
+
+            <option value="">
+              Seleccionar
+            </option>
+
+            <option>13:00</option>
+
+          </select>
+
+        </article>
+
+        <article>
+
+          <label class="field-label" for="duracion">
+            Duración
+          </label>
+
+          <select id="duracion" name="Duración" required>
+
+            <option value="">
+              Seleccionar
+            </option>
+
             <option>45 min</option>
           </select>
         </div>
@@ -129,6 +249,39 @@
       </div>
 
       <div class="submit-row">
+
+        </article>
+
+      </section>
+
+      <!-- COMENTARIOS -->
+      <section>
+
+        <label class="field-label" for="comentarios">
+          Comentarios adicionales
+        </label>
+
+        <textarea
+          id="comentarios"
+          name="Comentarios"
+          placeholder="Número de jugadores, requisitos especiales, etc."></textarea>
+
+      </section>
+
+      <!-- MENSAJE DE ÉXITO -->
+      <aside id="successBanner" class="success-banner">
+
+        <span>✓</span>
+
+        <span>
+          ¡Solicitud enviada! Te confirmaremos tu horario pronto.
+        </span>
+
+      </aside>
+
+      <!-- BOTÓN -->
+      <footer class="submit-row">
+
         <p class="submit-note">
         Al enviar la solicitud, sera revisada lo mas antes posible y se les mandara la confirmacion por el 
         gmail.
@@ -142,5 +295,18 @@
   </div>
 
   <script src="Horarios.js"></script>
+
+        <button class="submit-btn" type="submit">
+          Enviar solicitud →
+        </button>
+
+      </footer>
+
+    </form>
+
+  </main>
+
+  <script src="Hoararios.js"></script>
+
 </body>
 </html>
