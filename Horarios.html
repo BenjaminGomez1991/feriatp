@@ -1,272 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Solicita tu Horario Deportivo</title>
-  <link rel="stylesheet" href="Horarios.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <link rel="stylesheet" href="Horarios.css" />
 </head>
-
 <body>
 
-  <div class="card">
+  <65sd565dsdfs4df4sdf4s4df4sdf4szd4fs4df4sdf4s4dfs4df4 class="card">
 
-    <div class="header">
+    <nav class="header">
       <span class="header-tag">Centro Deportivo</span>
-
       <h1>Solicita tu horario</h1>
+      <p>Elige tu deporte y disponibilidad — Te confirmaremos en un aproximado de 24hrs </p>
+    </nav>
 
-      <p>
-        Elige tu deporte y disponibilidad —
-        Te confirmaremos en un aproximado de 24 horas.
-      </p>
-    </div>
+    <div class="form-body">
 
-    <!-- FORMULARIO -->
-    <form class="form-body" action="https://formsubmit.co/horariossip@gmail.com" method="POST">
-
-      <!-- Configuración de FormSubmit -->
-      <input type="hidden" name="_subject" value="Nueva solicitud de horario deportivo">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_template" value="table">
-
-      <!-- NOMBRE -->
       <div class="name-row">
-
         <div>
-          <label class="field-label" for="firstName">
-            Nombre
-          </label>
-
-          <input type="text" id="firstName" name="Nombre" placeholder="ej. Thiago" required>
+          <label class="field-label" for="firstName">Nombre</label>
+          <input type="text" id="firstName" placeholder="ej. Liza" />
         </div>
-
         <div>
-          <label class="field-label" for="lastName">
-            Apellido
-          </label>
-
-          <input type="text" id="lastName" name="Apellido" placeholder="ej. Pebre" required>
+          <label class="field-label" for="lastName">Apellido</label>
+          <input type="text" id="lastName" placeholder="ej. Molina" />
         </div>
-
       </div>
 
-
-      <!-- CORREO -->
       <div>
-
-        <label class="field-label" for="email">
-          Correo electrónico
-        </label>
-
-        <input type="email" id="email" name="Correo" placeholder="thiago.pebre@gmail.com" required>
-
+        <label class="field-label" for="email">Correo electrónico</label>
+        <input type="email" id="email" placeholder="tucorreo@gmail.com" />
       </div>
-
 
       <div class="divider"></div>
 
-
-      <!-- DEPORTES -->
       <div>
-
-        <label class="field-label">
-          Deporte de interés
-        </label>
-
+        <label class="field-label" style="margin-bottom:12px">Deporte de interés</label>
         <div class="sport-grid">
 
-          <!-- FÚTBOL -->
           <div class="sport-card">
-
-            <input type="checkbox" id="futbol" name="Deporte" value="Fútbol">
-
+            <input type="checkbox" id="futbol" />
             <label class="sport-label" for="futbol">
-
-              <span class="sport-icon">⚽</span>
-
-              <span class="sport-name">
-                Fútbol
-              </span>
-
-              <span class="sport-desc">
-                6 vs 6
-              </span>
-
+              <i class="ti ti-ball-football sport-icon"></i>
+              <span class="sport-name">Fútbol</span>
+              <span class="sport-desc">6 vs 6 · cancha techada</span>
             </label>
-
           </div>
 
-
-          <!-- BASQUETBOL -->
           <div class="sport-card">
-
-            <input type="checkbox" id="basquetbol" name="Deporte" value="Basquetbol">
-
+            <input type="checkbox" id="basquetbol" />
             <label class="sport-label" for="basquetbol">
-
-              <span class="sport-icon">🏀</span>
-
-              <span class="sport-name">
-                Basquetbol
-              </span>
-
-              <span class="sport-desc">
-                5 vs 5
-              </span>
-
+              <i class="ti ti-ball-basketball sport-icon"></i>
+              <span class="sport-name">Basquetbol</span>
+              <span class="sport-desc">5 vs 5 · cancha techada</span>
             </label>
-
           </div>
 
-
-          <!-- VOLEIBOL -->
           <div class="sport-card">
-
-            <input type="checkbox" id="volei" name="Deporte" value="Vóleibol">
-
+            <input type="checkbox" id="volei" />
             <label class="sport-label" for="volei">
-
-              <span class="sport-icon">🏐</span>
-
-              <span class="sport-name">
-                Vóleibol
-              </span>
-
-              <span class="sport-desc">
-                6 vs 6
-              </span>
-
+              <i class="ti ti-ball-volleyball sport-icon"></i>
+              <span class="sport-name">Vóleibol</span>
+              <span class="sport-desc">6 vs 6 · cancha techada</span>
             </label>
-
           </div>
 
         </div>
-
       </div>
-
 
       <div class="divider"></div>
 
-
-      <!-- DÍA, HORA Y DURACIÓN -->
       <div class="time-row">
-
         <div>
-
-          <label class="field-label" for="dia">
-            Día preferido
-          </label>
-
-          <select id="dia" name="Día" required>
-
-            <option value="">
-              Seleccionar
-            </option>
-
+          <label class="field-label" for="dia">Día preferido</label>
+          <select id="dia">
+            <option value="">Seleccionar</option>
             <option>Lunes</option>
             <option>Martes</option>
             <option>Miércoles</option>
             <option>Jueves</option>
             <option>Viernes</option>
-
+        
           </select>
-
         </div>
-
-
         <div>
-
-          <label class="field-label" for="hora">
-            Hora de inicio
-          </label>
-
-          <select id="hora" name="Hora" required>
-
-            <option value="">
-              Seleccionar
-            </option>
-
+          <label class="field-label" for="hora">Hora de inicio</label>
+          <select id="hora">
+            <option value="">Seleccionar</option>
             <option>13:00</option>
+            
           </select>
-
         </div>
-
-
         <div>
-
-          <label class="field-label" for="duracion">
-            Duración
-          </label>
-
-          <select id="duracion" name="Duración" required>
-
-            <option value="">
-              Seleccionar
-            </option>
-
+          <label class="field-label" for="duracion">Duración</label>
+          <select id="duracion">
+            <option value="">Seleccionar</option>
             <option>45 min</option>
-
           </select>
-
         </div>
-
       </div>
 
-
-      <!-- COMENTARIOS -->
       <div>
-
-        <label class="field-label" for="comentarios">
-          Comentarios adicionales
-        </label>
-
-        <textarea id="comentarios" name="Comentarios"
-          placeholder="Número de jugadores, requisitos especiales, etc."></textarea>
-
+        <label class="field-label" for="comentarios">Comentarios adicionales</label>
+        <textarea id="comentarios" placeholder="Número de jugadores, requisitos especiales, etc."></textarea>
       </div>
 
-
-      <!-- MENSAJE DE ÉXITO -->
       <div id="successBanner" class="success-banner">
-
-        <span>✓</span>
-
-        <span>
-          ¡Solicitud enviada! Te confirmaremos tu horario pronto.
-        </span>
-
+        <i class="ti ti-circle-check" style="font-size:20px"></i>
+        <span>¡Solicitud enviada! Te confirmaremos tu horario pronto.</span>
       </div>
 
-
-      <!-- BOTÓN -->
       <div class="submit-row">
-
         <p class="submit-note">
-
-          Al enviar la solicitud, será revisada lo más
-          antes posible y se les mandará la confirmación
-          por Gmail.
-
+        Al enviar la solicitud, sera revisada lo mas antes posible y se les mandara la confirmacion por el 
+        gmail.
         </p>
-
-
-        <button class="submit-btn" type="submit">
-
-          Enviar solicitud →
-
+        <button class="submit-btn" onclick="handleSubmit()">
+          Enviar solicitud <i class="ti ti-arrow-right"></i>
         </button>
-
       </div>
 
-    </form>
-
+    </div>
   </div>
 
-
   <script src="Horarios.js"></script>
-
 </body>
-
 </html>
