@@ -207,7 +207,7 @@ textarea {
   .name-row,
   .time-row,
   .sport-grid {
-    grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   }
 
   .form-body,
