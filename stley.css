@@ -1,9 +1,11 @@
+/* Reinicio básico y configuración general de la página */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Fondo y centrado del formulario de inicio de sesión */
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #2563eb, #111827);
@@ -13,12 +15,14 @@ body {
     align-items: center;
 }
 
+/* Contenedor principal del contenido */
 main {
     width: 100%;
     max-width: 420px;
     padding: 20px;
 }
 
+/* Tarjeta visual del inicio de sesión */
 .inicio {
     background: white;
     padding: 40px;
@@ -26,6 +30,7 @@ main {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
+/* Encabezado de bienvenida */
 header {
     text-align: center;
     margin-bottom: 30px;
@@ -41,6 +46,7 @@ header p {
     color: #6b7280;
 }
 
+/* Campos del formulario */
 form {
     display: flex;
     flex-direction: column;
@@ -61,10 +67,12 @@ input {
     outline: none;
 }
 
+/* Estado visual cuando el usuario escribe en un campo */
 input:focus {
     border-color: #2563eb;
 }
 
+/* Botón principal y estado al pasar el cursor */
 button {
     padding: 14px;
     background: #2563eb;
@@ -80,6 +88,7 @@ button:hover {
     background: #1d4ed8;
 }
 
+/* Pie de página y enlace hacia la reserva */
 footer {
     text-align: center;
     margin-top: 25px;

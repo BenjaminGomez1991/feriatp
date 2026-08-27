@@ -1,7 +1,9 @@
+/* Configuración base de la página de reservas */
 * {
   box-sizing: border-box;
 }
 
+/* Fondo general y tipografía */
 body {
   margin: 0;
   padding: 40px 20px;
@@ -10,6 +12,7 @@ body {
   color: #222;
 }
 
+/* Contenedor visual del formulario */
 .card {
   max-width: 850px;
   margin: auto;
@@ -19,6 +22,7 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
+/* Encabezado de la solicitud */
 .header {
   padding: 35px;
   background: #111827;
@@ -49,6 +53,7 @@ body {
   padding: 35px;
 }
 
+/* Distribución de los campos */
 .name-row,
 .time-row {
   display: grid;
@@ -70,6 +75,7 @@ body {
   font-size: 14px;
 }
 
+/* Estilos compartidos para controles del formulario */
 input,
 select,
 textarea {
@@ -93,6 +99,7 @@ textarea {
   resize: vertical;
 }
 
+/* Separadores entre grupos de información */
 .division {
   height: 1px;
   background: #e5e7eb;
@@ -100,6 +107,7 @@ textarea {
   margin: 20px 0;
 }
 
+/* Selector visual de deportes */
 .sport-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -115,6 +123,7 @@ textarea {
   opacity: 0;
 }
 
+/* Tarjetas de cada deporte y estados interactivos */
 .sport-label {
   display: flex;
   flex-direction: column;
@@ -154,6 +163,7 @@ textarea {
   font-size: 13px;
 }
 
+/* Mensaje mostrado después de enviar la solicitud */
 .success-banner {
   display: none;
   align-items: center;
@@ -169,6 +179,7 @@ textarea {
   display: flex;
 }
 
+/* Área final y botón de envío */
 .submit-row {
   display: flex;
   align-items: center;
