@@ -10,17 +10,21 @@
 
 <body>
 
+    <!-- Contenedor principal del inicio de sesión -->
     <main>
-        <section class="login">
+        <section class="inicio">
 
+            <!-- Mensaje de bienvenida -->
             <header>
                 <h1>Bienvenido</h1>
                 <p>Inicia sesión para continuar
                     y reservar tu partido 😎 </p>
             </header>
 
+            <!-- Datos necesarios para validar el acceso -->
             <form action="https://feriatp-ffdu.vercel.app/Horarios.html">
 
+                <!-- Identificación del usuario -->
                 <label for="correo">Correo electrónico</label>
                 <input 
                     type="email" 
@@ -30,6 +34,7 @@
                     required
                 >
 
+                <!-- Contraseña del usuario -->
                 <label for="password">Contraseña</label>
                 <input 
                     type="password" 
@@ -39,6 +44,7 @@
                     required
                 >
 
+                <!-- Envía las credenciales al archivo JavaScript -->
                 <button type="submit">Iniciar sesión</button>
 
             </form>
@@ -48,5 +54,6 @@
     </main>
 
 </body>
+<!-- Lógica de validación del inicio de sesión -->
 <script src="JavaScrpit.js"></script>
 </html>
