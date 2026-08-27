@@ -1,5 +1,5 @@
 // Datos de acceso permitidos para ingresar al formulario de reservas.
-var correoCorrecto = "benjamin.gomez.fuentes@alumnos.sip.cl";
+var correoCorrecto = "dante.retamal.bacho@alumnos.sip.cl";
 var passwordCorrecta = "SIP12345";
 
 // Formulario de inicio de sesión.
