@@ -20,3 +20,24 @@ formulario.addEventListener("submit", function(event) {
   }
 
 });
+
+let curso1 = document.getElementById("curso1");
+let curso2 = document.getElementById("curso2");
+
+curso1.addEventListener("change", function() {
+
+    for (let i = 0; i < curso2.options.length; i++) {
+
+        if (curso2.options[i].value == curso1.value) {
+            curso2.options[i].disabled = true;
+        } else {
+            curso2.options[i].disabled = false;
+        }
+
+    }
+
+    if (curso2.value == curso1.value) {
+        curso2.value = "";
+    }
+
+});
